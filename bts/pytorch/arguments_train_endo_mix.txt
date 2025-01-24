@@ -1,0 +1,31 @@
+--mode train
+--model_name bts_nyu_v2_pytorch_vcd_transverse_8_lr5e5
+--encoder densenet161_bts
+--dataset nyu
+--data_path ../our_data/vcd_descending/
+--gt_path ../our_data/VRSim/depth_map/
+--filenames_file ../train_test_inputs/vcd_mix_train_files_with_gt.txt
+--batch_size 8
+--num_epochs 60
+--learning_rate 5e-5
+--weight_decay 1e-2
+--adam_eps 1e-3
+--num_threads 1
+--input_height 320
+--input_width 320
+--max_depth 1
+--do_random_rotate
+--degree 2.5
+--log_directory ./models
+--multiprocessing_distributed
+--dist_url tcp://127.0.0.1:2348
+
+--log_freq 100
+--do_online_eval
+--eval_freq 500
+--data_path_eval ../our_data/vcd_descending/
+--gt_path_eval ../our_data/VRSim/depth_map/
+--filenames_file_eval ../train_test_inputs/vcd_mix_test_files_with_gt.txt
+--min_depth_eval 1e-3
+--max_depth_eval 1
+--eval_summary_directory ./models/eval/

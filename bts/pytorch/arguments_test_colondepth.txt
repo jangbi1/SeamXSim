@@ -1,0 +1,9 @@
+--encoder densenet161_bts
+--data_path ../our_data/ColonoscopyDepth/T3/C_T3_L3_2_resized
+--dataset nyu
+--filenames_file ../train_test_inputs/colonoscopydepth_test_files_with_gt.txt
+--model_name bts_nyu_v2_pytorch_sto_sigmoid_8_lr5e5
+--checkpoint_path ./models/bts_nyu_v2_pytorch_sto_sigmoid_8_lr5e5/model-38000-best_d1_0.99561
+--input_height 320
+--input_width 320
+--max_depth 1

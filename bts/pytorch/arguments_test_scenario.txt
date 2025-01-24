@@ -1,0 +1,9 @@
+--encoder densenet161_bts
+--data_path ../our_data/Scenario/
+--dataset nyu
+--filenames_file ../train_test_inputs/scenario_test_files_with_gt.txt
+--model_name bts_nyu_v2_pytorch_sto_rectum_8_lr5e5
+--checkpoint_path ./models/bts_nyu_v2_pytorch_sto_rectum_8_lr5e5/model-48000-best_log_rms_0.04676
+--input_height 320
+--input_width 320
+--max_depth 1
